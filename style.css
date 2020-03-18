@@ -1,4 +1,14 @@
 nav{
-    background-color: aqua;
+    background: aqua;
     padding: 20px;
+}
+.columna{
+    background: brown;
+    color: cornsilk;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+.padre{
+    display: flex;
 }
