@@ -5,13 +5,14 @@
     </head>
     <body>
         <nav>
-            <a href=""  class="nav-enlace">Nuvlar</a>
-            <a href=""  class="nav-enlace">Inicio</a>
-            <a href=""  class="nav-enlace">Proyecto</a>
-            <a href=""  class="nav-enlace">LOCRYPT</a>
-            <a href=""  class="nav-enlace">BOLETOPOLIS</a>
-            <a href=""  class="nav-enlace">VER MÀS</a>
-            <a href=""  class="nav-enlace">Contacto</a>
+            <button class="nav-boton" onclick="accion()">Menú</button>
+            <a href="#"  class="nav-enlace desaparece">Nuvlar</a>
+            <a href="#"  class="nav-enlace desaparece">Inicio</a>
+            <a href="#"  class="nav-enlace desaparece">Proyecto</a>
+            <a href="#"  class="nav-enlace desaparece">LOCRYPT</a>
+            <a href="#"  class="nav-enlace desaparece">BOLETOPOLIS</a>
+            <a href="#"  class="nav-enlace desaparece">VER MÀS</a>
+            <a href="#"  class="nav-enlace desaparece">Contacto</a>
         </nav>
         <section class="padre">
         <p class="columna"> Esto es un parrafo de prueba para ver flexbox:
@@ -33,6 +34,16 @@
         Le damos a crear repositorio y con esto ya tenemos el repositorio donde alojaremos 
         nuestro proyecto. </p>
      </section>
+     <script>
+         function accion(){
+             console.log('está funcioando mi botón');
+             var ancla= document.getElementsByClassName('nav-enlace');
+             for(var i = 0; i < ancla.length; i++){
+                 ancla[i].classList.toggle('desaparece');
+
+             }
+         }
+     </script>
     </body>
 
 </html>
