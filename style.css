@@ -1,7 +1,10 @@
 nav{
     background: aqua;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
+/*botones de enlace parte superior*/
 .nav-enlace{
     display: inline-block;
     background: salmon;
@@ -12,7 +15,7 @@ nav{
 .nav-enlace:hover{
     background: green;
 }
-
+/*caja con los parrafos*/
 .columna{
     background: brown;
     color: cornsilk;
@@ -20,6 +23,17 @@ nav{
     width: 25%;
     margin: 10px;
 }
+/* parrafos */
 .padre{
     display: flex;
+}
+@media(max-width: 600px)
+{
+    nav{
+        background: lawngreen;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0px ;
+    }
 }
