@@ -15,22 +15,58 @@ p{
 /*div al lado del otro*/
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 /*texto hacia el centro*/
 .text-center{
     text-align: center;
 }
-/*afecta cada div de columna*/
+/*afecta cada div de columna, border radius para redondear borde*/
+/*box-shadow para dar sombra numeros enteros a la derecha negativos a la izquierda
+segundo valor arriva o abajo tercer valor degradado
+box-sizing es para ajustar los espacios entre bordes*/
 .columna{
     background: whitesmoke;
     color: teal;
     border: 1px solid tomato;
-    margin: 10px;
+    margin: 0 auto;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey ;
+    width: 23%;
+    box-sizing: border-box;
 }
 /*cambia tamaño de letra y color de precio*/
 .precio{
     font-size: 50px;
     color: turquoise;
+}
+/*para el boton el display ocupa mas espacio, text decoration none quita el subrrayado*/
+.btn-precio{
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/*esto indica que se hará cuando el mause toque el botón*/
+.btn-precio:hover{
+    background: sandybrown;
+}
+/* media ajusta antes del 1070 las columnas al 45%
+margin-bottom ajusta el espacio de abajo*/
+@media (max-width: 1070px) {
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+/*cuando esté en 600 que ocupe todo el espacio la columna*/
+@media(max-width:600px ){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
