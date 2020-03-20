@@ -35,6 +35,7 @@ nav{
     display: none;
 
 }
+/*media para adaptavilidad a los 600 pixeles*/
 @media(max-width: 600px)
 {
     nav{

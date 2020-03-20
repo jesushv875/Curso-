@@ -1,0 +1,36 @@
+/*letras*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-weight: 300;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+/*div al lado del otro*/
+.flex{
+    display: flex;
+}
+/*texto hacia el centro*/
+.text-center{
+    text-align: center;
+}
+/*afecta cada div de columna*/
+.columna{
+    background: whitesmoke;
+    color: teal;
+    border: 1px solid tomato;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+/*cambia tamaño de letra y color de precio*/
+.precio{
+    font-size: 50px;
+    color: turquoise;
+}
